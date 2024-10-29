@@ -1,0 +1,82 @@
+.ie11-closure {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #ebe7e2;
+  overflow-y: scroll;
+  display: none;
+}
+
+/* Visible only for IE11 */
+@media screen and (-ms-high-contrast: none) {
+  body {
+    overflow: hidden;
+  }
+  .ie11-closure {
+    display: flex;
+  }
+}
+
+.ie11-closure .ie11-closure__bb {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #FA7F25, #FDBE13);
+  flex-shrink: 0;
+}
+.ie11-closure .ie11-closure__inner {
+  width: 960px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.ie11-closure .ie11-closure__header {
+  background-color: #fff;
+  padding: 9px 0;
+}
+.ie11-closure .ie11-closure__content {
+  background: #fff url('../images/oakbg.jpg') no-repeat center center;
+  background-size: cover;
+  flex-grow: 1;
+}
+.ie11-closure .ie11-closure__content .frame {
+  margin: 50px auto;
+}
+.ie11-closure .ie11-closure__browsers {
+  text-align: center;
+  background-color: #EBF8F2;
+  padding: 20px;
+}
+.ie11-closure .ie11-closure__links {
+  display: flex;
+  justify-content: center;
+}
+.ie11-closure .ie11-closure__browsers a {
+  margin: 40px 40px 20px;
+  display: block;
+  width: 96px;
+  height: 96px;
+}
+.ie11-closure .ie11-closure__browsers img {
+  display: inline-block;
+  max-width: 96px; /* ie11 specific */
+  max-height: 96px;
+}
+.ie11-closure .ie11-closure__columns {
+  display: flex;
+  margin: 20px auto 10px;
+  background-color: #fff;
+}
+.ie11-closure .ie11-closure__columns div {
+  flex: 1 1 0;
+  margin-right: 15px;
+}
+.ie11-closure .ie11-closure__columns div:last-child {
+  margin-right: 0;
+}
+.ie11-closure .ie11-closure__footer > div {
+  margin: 20px auto;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulius Mantrimas Petrauskas - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paulius Mantrimas Petrauskas</h1>
+        <p>Vilnius, Lithuania | +37069257321 | pauliusm.petrauskas@gmail.com</p>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/paulius-mantrimas-petrauskas-64199b253/">LinkedIn</a></li>
+                <li><a href="https://gitlab.com/pauliusmpetrauskas">GitLab</a></li>
+                <li><a href="https://github.com/notolls">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>22-year-old 3rd-year Software Engineering student at Vilnius Tech. Dedicated IT professional providing unforgettable experiences to clients while maintaining an addiction to learning new technologies. Plagued with the overwhelming urge to tinker, figure things out, and build enterprise-level products.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Scripting languages: Bash, PowerShell</li>
+            <li>Administration: Active Directory, Azure Active Directory, GPO, Microsoft Intune</li>
+            <li>Programming languages: C++, Java, Python, HTML5, CSS, JavaScript</li>
+            <li>Linux distros: Kali, Ubuntu, Manjaro</li>
+            <li>Technologies: Kubernetes, Docker, Helm, Git, AWS (S3, EC2, CloudFormation, EKS)</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <button onclick="toggleExperience()">Toggle Experience</button>
+        <div id="experienceDetails" style="display: none;">
+            <div class="job">
+                <h3>Systems Administrator</h3>
+                <p><strong>Reiz Tech</strong> | Vilnius, Lithuania</p>
+                <p>Duration: 1 year, 1 month</p>
+                <p>Learned internal IT infrastructure, Azure Active Directory, Active Directory, Azure DevOps, PowerShell scripting, SSL VPN, GPO, Windows 365 products and their administration, Microsoft 365 Admin Center, extended Windows knowledge, networking and internet technologies (VPN, LAN, WAN, VLAN, WiFi, DNS).</p>
+            </div>
+
+            <div class="job">
+                <h3>DevOps</h3>
+                <p><strong>Reiz Tech</strong> | Vilnius, Lithuania</p>
+                <p>Duration: (Duration)</p>
+                <p>Learned Development and Operations philosophy, Git, Docker, Kubernetes, Helm, Linux, AWS, GitLab.</p>
+            </div>
+
+            <div class="job">
+                <h3>Graduation Project</h3>
+                <p><strong>(Project Title)</strong></p>
+                <p>(Description)</p>
+            </div>
+
+            <div class="courses">
+                <h3>Udemy Courses</h3>
+                <ul>
+                    <li>Helm Masterclass</li>
+                    <li>Kubernetes</li>
+                    <li>Git</li>
+                    <li>GitLab CI/CD and DevOps for Beginners</li>
+                    <li>Linux Mastery</li>
+                    <li>Docker Fast Track</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paulius Mantrimas Petrauskas</p>
+    </footer>
+
+    <script>
+        function toggleExperience() {
+            var experienceDetails = document.getElementById("experienceDetails");
+            if (experienceDetails.style.display === "none") {
+                experienceDetails.style.display = "block";
+            } else {
+                experienceDetails.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
